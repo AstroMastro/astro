@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
     -webkit-touch-callout: none; /* Impedisce il menu di contesto su dispositivi iOS */
     -webkit-user-select: none; /* Impedisce il menu di contesto su browser WebKit come Chrome e Safari */
     -khtml-user-select: none; /* Impedisce il menu di contesto su browser come Konqueror */
