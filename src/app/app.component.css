@@ -3,12 +3,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-touch-callout: none; /* Impedisce il menu di contesto su dispositivi iOS */
+    -webkit-user-select: none; /* Impedisce il menu di contesto su browser WebKit come Chrome e Safari */
+    -khtml-user-select: none; /* Impedisce il menu di contesto su browser come Konqueror */
+    -moz-user-select: none; /* Impedisce il menu di contesto su Firefox */
+    -ms-user-select: none; /* Impedisce il menu di contesto su Internet Explorer / Edge */
+    user-select: none; /* Impedisce il menu di contesto su altri browser */
   }
   
   .image {
     width: 100%;
     height: 700px;
     background: transparent;
+    pointer-events: none; /* Impedisce gli eventi del mouse sulla tua immagine */
+    user-drag: none; /* Impedisce il trascinamento dell'immagine (solo per alcuni browser) */
+    -moz-user-select: none; /* Impedisce il trascinamento dell'immagine (per Firefox) */
+    -webkit-user-drag: none; /* Impedisce il trascinamento dell'immagine (per browser WebKit come Chrome e Safari) */
   }
   
   /* Stili per il div di sfondo */
