@@ -1,40 +1,38 @@
-/* Stili per rimpicciolire l'immagine */
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    -webkit-touch-callout: none; /* Impedisce il menu di contesto su dispositivi iOS */
-    -webkit-user-select: none; /* Impedisce il menu di contesto su browser WebKit come Chrome e Safari */
-    -khtml-user-select: none; /* Impedisce il menu di contesto su browser come Konqueror */
-    -moz-user-select: none; /* Impedisce il menu di contesto su Firefox */
-    -ms-user-select: none; /* Impedisce il menu di contesto su Internet Explorer / Edge */
-    user-select: none; /* Impedisce il menu di contesto su altri browser */
-  }
-  
-  .image {
+    position: relative;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    /* Impedisce il menu di contesto su dispositivi iOS */
+    -webkit-user-select: none;
+    /* Impedisce il menu di contesto su browser WebKit come Chrome e Safari */
+    -khtml-user-select: none;
+    /* Impedisce il menu di contesto su browser come Konqueror */
+    -moz-user-select: none;
+    /* Impedisce il menu di contesto su Firefox */
+    -ms-user-select: none;
+    /* Impedisce il menu di contesto su Internet Explorer / Edge */
+    user-select: none;
+    /* Impedisce il menu di contesto su altri browser */
+}
+
+.image {
     width: 100%;
     height: 700px;
-    background: transparent;
-    pointer-events: none; /* Impedisce gli eventi del mouse sulla tua immagine */
-    user-drag: none; /* Impedisce il trascinamento dell'immagine (solo per alcuni browser) */
-    -moz-user-select: none; /* Impedisce il trascinamento dell'immagine (per Firefox) */
-    -webkit-user-drag: none; /* Impedisce il trascinamento dell'immagine (per browser WebKit come Chrome e Safari) */
-  }
-  
-  /* Stili per il div di sfondo */
-  .button-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%; /* Altezza fissa del 80% rispetto all'altezza dell'immagine rimpicciolita */
-    background-color: rgba(26, 37, 70, 0.8); /* Colore di sfondo del div di sfondo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    /* Aggiungi eventuali stili per il bottone trasparente */
-  }
-  
-  
+    pointer-events: none;
+    /* Impedisce gli eventi del mouse sulla tua immagine */
+    user-drag: none;
+    /* Impedisce il trascinamento dell'immagine (solo per alcuni browser) */
+    -moz-user-select: none;
+    /* Impedisce il trascinamento dell'immagine (per Firefox) */
+    -webkit-user-drag: none;
+    /* Impedisce il trascinamento dell'immagine (per browser WebKit come Chrome e Safari) */
+}
+
+@media (max-height: 700px) {
+    .image {
+      height: 100%; /* Resetta l'altezza per adattarsi al ridimensionamento */
+    }
+}
