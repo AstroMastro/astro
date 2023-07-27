@@ -216,9 +216,6 @@ Apache-2.0
  
 
 
-tw-elements
-AGPL
-
 zone.js
 MIT
 The MIT License
