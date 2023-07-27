@@ -20,7 +20,6 @@
 
 .image {
     width: 100%;
-    height: 700px;
     pointer-events: none;
     /* Impedisce gli eventi del mouse sulla tua immagine */
     user-drag: none;
@@ -31,8 +30,17 @@
     /* Impedisce il trascinamento dell'immagine (per browser WebKit come Chrome e Safari) */
 }
 
+.mobile {
+    height: 100%;
+}
+
+.computer {
+    height: 700px;
+}
+
 @media (max-height: 700px) {
     .image {
-      height: 100%; /* Resetta l'altezza per adattarsi al ridimensionamento */
+        height: 100%;
+        /* Resetta l'altezza per adattarsi al ridimensionamento */
     }
 }

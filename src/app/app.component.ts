@@ -13,9 +13,14 @@ export class AppComponent implements OnInit {
   page5 = 'assets/svg/5.svg';
   page6 = 'assets/svg/6.svg';
   page7 = 'assets/svg/7.svg';
+  isMobile = false;
+
+  isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
 
   ngOnInit(): void {
-    
+    this.isMobile = this.isMobileDevice();
   }
-  
+
 }
