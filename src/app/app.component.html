@@ -1,8 +1,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<div> 
-    <div class="image-container" style="background: #1A2546;">
-        <img [ngClass]="{'image': true, 'mobile':isMobile, 'computer':!isMobile}" [src]="page1" alt="My SVG Image">
+<div class="page" style="background: #1B2126;">
+    <div class="container-page">
+        <img class="image" style="margin-left: 5%; transform: scale(1.2);" [src]="page1" alt="My SVG Image">
+        <div class="text-container" style="margin-right: 5%;">
+            <h1 class="title">Francesco Tramutola</h1>
+            <p class="subtitle">Portando personaggi in vita, un ruolo alla volta</p>
+            <button class="custom-button">Contatta</button>
+        </div>
     </div>
+</div>
+<!--
     <div class="image-container" style="background: #331F11;">
         <img [ngClass]="{'image': true, 'mobile':isMobile, 'computer':!isMobile}" [src]="page2" alt="My SVG Image">
     </div>
@@ -21,4 +28,4 @@
     <div class="image-container">
         <img [ngClass]="{'image': true, 'mobile':isMobile, 'computer':!isMobile}" [src]="page7" alt="My SVG Image">
     </div>
-</div>
+-->

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  page1 = 'assets/svg/1.svg';
+  page1 = 'assets/svg/s2.png';
   page2 = 'assets/svg/2.svg';
   page3 = 'assets/svg/3.svg';
   page4 = 'assets/svg/4.svg';
@@ -15,12 +15,15 @@ export class AppComponent implements OnInit {
   page7 = 'assets/svg/7.svg';
   isMobile = false;
 
-  isMobileDevice() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  }
-
   ngOnInit(): void {
     this.isMobile = this.isMobileDevice();
   }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+  }
+
+  isMobileDevice() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  }
 }

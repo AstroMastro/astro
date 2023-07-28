@@ -1,46 +1,125 @@
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    -webkit-touch-callout: none;
-    /* Impedisce il menu di contesto su dispositivi iOS */
-    -webkit-user-select: none;
-    /* Impedisce il menu di contesto su browser WebKit come Chrome e Safari */
-    -khtml-user-select: none;
-    /* Impedisce il menu di contesto su browser come Konqueror */
-    -moz-user-select: none;
-    /* Impedisce il menu di contesto su Firefox */
-    -ms-user-select: none;
-    /* Impedisce il menu di contesto su Internet Explorer / Edge */
-    user-select: none;
-    /* Impedisce il menu di contesto su altri browser */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-page {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 1200px) {
+  .container-page {
+    width: 75vw;
+    height: 200px;
+  }
+  .image {
+    height: 200px;
+  }
+  .text-container {
+    .title {
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 12px;
+      padding-bottom: 30px;
+    }
+    .custom-button {
+      font-size: 13px;
+      width: 60px;
+      height: 15px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container-page {
+    width: 75vw;
+    height: 200px;
+  }
+  .image {
+    height: 200px;
+  }
+  .text-container {
+    .title {
+      font-size: 15px;
+      padding-bottom: 7px;
+    }
+    .subtitle {
+      font-size: 9px;
+      padding-bottom: 20px;
+    }
+    .custom-button {
+      font-size: 7px;
+      width: 60px;
+      height: 15px;
+    }
+  }
 }
 
 .image {
-    width: 100%;
-    pointer-events: none;
-    /* Impedisce gli eventi del mouse sulla tua immagine */
-    user-drag: none;
-    /* Impedisce il trascinamento dell'immagine (solo per alcuni browser) */
-    -moz-user-select: none;
-    /* Impedisce il trascinamento dell'immagine (per Firefox) */
-    -webkit-user-drag: none;
-    /* Impedisce il trascinamento dell'immagine (per browser WebKit come Chrome e Safari) */
+  max-width: 100%;
+  max-height: 50vh;
+  margin: auto;
+  position: relative;
+  pointer-events: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+
 }
 
-.mobile {
-    height: 100%;
+.text-container {
+  width: 20vw;
+  max-width: 100%;
+  max-height: 50vh;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
 }
 
-.computer {
-    height: 700px;
+.title {
+  font-family: "Clear Sans", sans-serif;
+  line-height: 1;
+  font-size: 5vh;
+  color: rgb(155, 120, 107);
+  padding-bottom: 1.5vh;
 }
 
-@media (max-height: 700px) {
-    .image {
-        height: 100%;
-        /* Resetta l'altezza per adattarsi al ridimensionamento */
-    }
+.subtitle {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1;
+  font-size: 3vh;
+  color: rgb(224, 187, 174);
+  padding-bottom: 5vh;
+}
+
+.custom-button {
+  font-family: "DM Sans", sans-serif;
+  width: 20vh;
+  height: 5vh;
+  background: #31486E;
+  color: rgb(224, 187, 174);
+  font-size: 1.7vh;
+  cursor: pointer;
 }
