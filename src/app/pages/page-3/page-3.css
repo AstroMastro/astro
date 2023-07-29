@@ -1,0 +1,60 @@
+@import "src/styles.css";
+
+.page {
+  background: #022736;
+}
+
+.image {
+  position: absolute;
+  transform: scale(1.3)
+}
+
+.text-container {
+  margin-left: 10vw;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  width: 40vw;
+}
+
+.title {
+  align-self: left;
+  color: #BD895F;
+}
+
+.subtitle {
+  color: #AE8A7C;
+}
+
+.custom-button {
+  background: #29190E;
+  color: #AE8A7C;
+}
+
+@media (max-width: 768px) {
+  .container-page {
+    height: 200px;
+  }
+
+  .image {
+    height: 200px;
+  }
+
+  .text-container {
+    .title {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      padding-bottom: 20px;
+    }
+
+    .custom-button {
+      width: 85px;
+      height: 19px;
+      font-size: 9px;
+    }
+  }
+}

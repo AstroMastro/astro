@@ -1,0 +1,51 @@
+@import "src/styles.css";
+
+.page {
+    background: #1B2126;
+}
+
+.image {
+    transform: scale(1.4);
+    margin-right: 20vw;
+}
+
+.title {
+    color: rgb(155, 120, 107);
+}
+
+.subtitle {
+    color: rgb(224, 187, 174);
+}
+
+.custom-button {
+    color: rgb(224, 187, 174);
+    background: #31486E;
+}
+
+@media (max-width: 768px) {
+    .container-page {
+        height: 200px;
+    }
+
+    .image {
+        height: 200px;
+    }
+
+    .text-container {
+        .title {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 11px;
+            padding-bottom: 20px;
+        }
+
+        .custom-button {
+            width: 85px;
+            height: 19px;
+            font-size: 9px;
+        }
+    }
+}
