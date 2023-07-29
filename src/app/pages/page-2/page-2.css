@@ -19,15 +19,20 @@
 .title {
   align-self: left;
   color: #BD895F;
+  font-size: 5vh;
 }
 
 .subtitle {
   color: #AE8A7C;
+  font-size: 2vh;
 }
 
 .custom-button {
   background: #29190E;
   color: #AE8A7C;
+  width: 25vh;
+  height: 5vh;
+  font-size: 1.7vh;
 }
 
 @media (max-width: 768px) {
