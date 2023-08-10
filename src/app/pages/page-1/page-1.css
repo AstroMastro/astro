@@ -6,7 +6,6 @@
 
 .image {
     transform: scale(1.4);
-    margin-right: 10vw;
 }
 
 .title {
@@ -28,7 +27,7 @@
     text-decoration-line: underline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
     .container-page {
         height: 200px;
     }

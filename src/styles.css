@@ -15,8 +15,9 @@
 }
 
 .container-page {
-    width: 90vw;
-    height: 60vh;
+    gap: 10vw;
+    width: 70vw;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,18 +33,19 @@
 
 .image {
     max-width: 100%;
-    max-height: 60vh;
+    max-height: 50vh;
     position: relative;
     pointer-events: none;
     user-drag: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
+    opacity: 0.75;
 }
 
 .text-container {
     width: 20vw;
     max-width: 100%;
-    max-height: 60vh;
+    max-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,4 +69,9 @@
 .custom-button {
     font-family: "DM Sans", sans-serif;
     cursor: pointer;
+    text-decoration-line: underline;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

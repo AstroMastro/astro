@@ -6,7 +6,7 @@
 
 .image {
   position: absolute;
-  transform: scale(1.3)
+  transform: scale(1.3);
 }
 
 .text-container {
@@ -18,12 +18,12 @@
 }
 
 .title {
-  align-self: left;
-  color: #BD895F;
+  align-self: baseline;
+  color: #80d0dc;
 }
 
 .subtitle {
-  color: #AE8A7C;
+  color: #cdf8ff;
 }
 
 .custom-button {
@@ -31,7 +31,7 @@
   color: #AE8A7C;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1600px) {
   .container-page {
     height: 200px;
   }

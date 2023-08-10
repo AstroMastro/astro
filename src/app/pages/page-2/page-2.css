@@ -1,23 +1,28 @@
 @import "src/styles.css";
 
+.separator{
+  width: 7vw;
+}
+
+.container-page {
+}
+
 .page {
   background: #4E321B;
 }
 
 .image {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .text-container {
-  margin-left: 10vw;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-  width: 40vw;
+  width: 30vw;
+  position: absolute;
+  top: 25%;
 }
 
 .title {
-  align-self: left;
+  align-self: baseline;
   color: #BD895F;
   font-size: 5vh;
 }
@@ -25,6 +30,7 @@
 .subtitle {
   color: #AE8A7C;
   font-size: 2vh;
+  text-align: left;
 }
 
 .custom-button {
@@ -33,22 +39,25 @@
   width: 25vh;
   height: 5vh;
   font-size: 1.7vh;
+  align-self: baseline;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1400px) {
+  .separator{
+    width: 10vw;
+  }
+
   .container-page {
     height: 200px;
   }
 
   .image {
-    position: absolute;
-    margin-left: 20vw;
     height: 200px;
   }
 
+
   .text-container {
-    position: absolute;
-    margin-left: -40vw;
+    top: 15%;
     .title {
       font-size: 18px;
       padding-bottom: 10px;
